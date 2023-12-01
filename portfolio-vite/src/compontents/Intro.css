@@ -1,0 +1,18 @@
+
+
+.behind-motion {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: purple;
+    scroll-snap-align: center;
+}
+
+.circle-motion {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background-color: white;
+
+}
