@@ -1,34 +1,25 @@
-//import './App.css'
-import styled from 'styled-components'
-import Intro from "./compontents/Intro"
-import About from "./compontents/About"
-import Skills from "./compontents/Skills"
-import Contact from "./compontents/Contact"
-import Sidebar from './compontents/sidebar/Sidebar'
+//import reactLogo from './assets/react.svg'
+//import viteLogo from '/vite.svg'
+import Navbar from "./Components/Navbar"
 
+import './App.css'
 
-const Container = styled.div`
-  height: 100vh;
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
-  overflow-y: auto;
-  scrollbar-width: none;
-  color: white;
-  &::-webkit-scrollbar {
-    display: none;
-  }
-`;
+// eslint-disable-next-line no-unused-vars
+import React from 'react'
 
-function App() {
+const App = () => {
   return (
-      <Container>
-        <Sidebar/>
-        <Intro/>
-        <About/>
-        <Skills/>
-        <Contact/>
-      </Container>
+    <div className="bg-black">
+      <Navbar/>
+      <h1 className="text-3xl text-red-500 font-bold underline">Hello!</h1>
+    </div>
   )
 }
 
 export default App
+
+
+
+
+
+
