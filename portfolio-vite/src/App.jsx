@@ -1,13 +1,19 @@
 //import './App.css'
 import Navbar from "./Components/Navbar"
 import Intro from "./components/Intro"
+import About from "./components/About"
+import Skills from "./components/Skills"
+import Contact from "./components/Contact"
 
 function App() {
   return (
-   <body className="bg-black text-white min-h-screen flex flex-col">
+   <section>
      <Navbar/>
-     <Intro/>
-   </body>
+     <Intro id="Intro"/>
+     <About id="About"/>
+     <Skills id="Skills"/>
+     <Contact id="Contact"/>
+   </section>
   )
 }
 
