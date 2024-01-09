@@ -1,4 +1,4 @@
-import { motion, useCycle } from "framer-motion"
+import { motion, useCycle, AnimatePresence, MotionConfig } from "framer-motion"
 import "./Navbar.css"
 
 function Navbar() {
@@ -6,8 +6,8 @@ function Navbar() {
 const [sidebar, toggleSidebar] = useCycle(false, true);
 
   return (
-    <nav className="sticky top-0 inset-x-0 h-16 bg-white">
-        <div className="container h-full px-4 flex items-center">
+    <nav className="sticky top-0 inset-x-0 h-16 bg-transparant">
+        <div className="container h-full w-[300px] px-4 flex items-center">
             <div className="relative z-10">
                 <motion.button 
                     animate={sidebar ? "open" : "closed"}
@@ -35,9 +35,49 @@ const [sidebar, toggleSidebar] = useCycle(false, true);
                 </motion.button>
             </div>
         </div>
+        <AnimatePresence>
         {sidebar && (
-            <div className="fixed inset-0 bg-white space-y-10 p-6 flex flex-col justify-center items-center">
-            <div>
+            <MotionConfig transition={{
+                type: "spring",
+                bounce: .25,
+
+            }}>
+            <motion.div 
+                key="sidebar"
+                variants={{
+                    open: {
+                        x: "0%",
+                        transition: {
+                            type: "spring",
+                            bounce: .0,
+                            when: "beforeChildren",
+                        }
+                    },
+                    closed: {
+                        x: "-100%",
+                        transition: {
+                            type: "spring",
+                            bounce: .0,
+                            
+                        },
+                    },
+                
+                }}
+            initial="closed"
+            animate="open"
+            exit="closed"
+            
+            className="fixed inset-0 bg-white space-y-10 p-6 flex flex-col justify-center items-center">
+            <motion.div variants={{
+                open: {
+                    y: "0%",
+                    opacity: 1,
+                },
+                closed: {
+                    y: "25%",
+                    opacity: 0,
+                },
+            }}>
                 <ul className="space-y-5">
                     <li onClick={() => toggleSidebar(false)}>
                         <a href="#Intro" className="text-4xl font-light text-black">Intro</a>
@@ -52,10 +92,11 @@ const [sidebar, toggleSidebar] = useCycle(false, true);
                         <a href="#Contact" className="text-4xl font-light text-black">Contact</a>
                     </li>
                 </ul>
-            </div>
-        </div>
+            </motion.div>
+        </motion.div>
+        </MotionConfig>
         )}
-        
+        </AnimatePresence>
     </nav>
         
     

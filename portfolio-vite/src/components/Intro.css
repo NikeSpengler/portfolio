@@ -1,0 +1,24 @@
+.intro {
+    position: relative;
+}
+
+.wrapper{
+    max-width: 1366px;
+    height: 100%;
+    margin: auto;
+}
+
+.intro-text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.img {
+    height: 100px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
