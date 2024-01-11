@@ -7,7 +7,7 @@ const [sidebar, toggleSidebar] = useCycle(false, true);
 
   return (
     <nav className="sticky top-0 inset-x-0 h-16 bg-transparant">
-        <div className="container h-full w-[300px] px-4 flex items-center">
+        <div className="container h-full px-4 flex items-center">
             <div className="relative z-10">
                 <motion.button 
                     animate={sidebar ? "open" : "closed"}
@@ -67,7 +67,7 @@ const [sidebar, toggleSidebar] = useCycle(false, true);
             animate="open"
             exit="closed"
             
-            className="fixed inset-0 bg-white space-y-10 p-6 flex flex-col justify-center items-center">
+            className="fixed w-[400px] inset-0 bg-white space-y-10 p-6 flex flex-col justify-center items-center">
             <motion.div variants={{
                 open: {
                     y: "0%",
