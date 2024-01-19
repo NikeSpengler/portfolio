@@ -22,3 +22,10 @@
     top: 0;
     right: 0;
 }
+
+.circle {
+    width: 200px;
+    height: 200px;
+    background-color:#fef08a;
+    border-radius: 50%;
+}

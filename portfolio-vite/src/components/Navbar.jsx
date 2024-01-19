@@ -67,7 +67,7 @@ const [sidebar, toggleSidebar] = useCycle(false, true);
             animate="open"
             exit="closed"
             
-            className="fixed w-[400px] inset-0 bg-white space-y-10 p-6 flex flex-col justify-center items-center">
+            className="fixed w-[400px] inset-0 bg-gray-100 space-y-10 p-6 flex flex-col justify-center items-center xs:w-full">
             <motion.div variants={{
                 open: {
                     y: "0%",
