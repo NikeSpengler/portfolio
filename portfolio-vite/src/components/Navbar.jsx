@@ -67,7 +67,7 @@ const [sidebar, toggleSidebar] = useCycle(false, true);
             animate="open"
             exit="closed"
             
-            className="fixed w-[400px] inset-0 bg-gray-100 space-y-10 p-6 flex flex-col justify-center items-center xs:w-full">
+            className="fixed w-[400px] inset-0 bg-stone-100 space-y-10 p-6 flex flex-col justify-center items-center xs:w-full">
             <motion.div variants={{
                 open: {
                     y: "0%",
@@ -86,7 +86,7 @@ const [sidebar, toggleSidebar] = useCycle(false, true);
                         <a href="#About" className="text-4xl font-light text-black">About</a>
                     </li>
                     <li onClick={() => toggleSidebar(false)}>
-                        <a href="#Skills" className="text-4xl font-light text-black">Skills</a>
+                        <a href="#Work" className="text-4xl font-light text-black">Work</a>
                     </li>
                     <li onClick={() => toggleSidebar(false)}>
                         <a href="#Contact" className="text-4xl font-light text-black">Contact</a>
