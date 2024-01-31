@@ -1,5 +1,5 @@
 // eslint-disable-next-line no-unused-vars
-import { motion, useScroll, useSpring } from 'framer-motion'
+import { motion, useScroll, useSpring, useTransform } from 'framer-motion'
 import { useRef } from 'react';
 
 const items = [
@@ -43,19 +43,24 @@ const items = [
 
 const Single = ({item}) => {
   const ref = useRef()
+
+  const {scrollYProgress} = useScroll({
+    target: ref, 
+  });
+
+  const y = useTransform(scrollYProgress, [0,1], [-300, 300]);
+
   return (
     <div ref={ref} className='gap-8 py-6 px-4 bg-white text-black text-2xl min-h-screen flex flex-col justify-center items-center
     md:flex md:flex-row md:justify-center md:justify-items-center md:h-full'>
-      <div id="container">
+      <div id="container" className='flex justify-center items-center'>
         <img src={item.img} alt=""/>
-        <div id="textContainer">
+        <motion.div id="textContainer" style={{y}}>
           <p className='text-3xl text-stone-600 pb-2'>{item.title}</p>
           <p className='text-xl text-stone-600 pb-4 max-w-[120px]'>{item.desc}</p>
-          <button className='text-xl text-stone-900 hover:text-red-600'>GitHub →</button>
-        </div>
-
+          <button className='text-xl text-stone-600 pb-20 hover:text-red-600'>GitHub →</button>
+        </motion.div>
       </div>
-      
     </div>
   )
 }
@@ -73,7 +78,7 @@ const Work = () => {
   })
 
   return (
-    <div id="Work" ref={ref} className="relative bg-white text-stone-600 min-h-screen px-4 pt-4 pb-4 flex flex-col justify-center">
+    <div id="Work" ref={ref} className="relative -z-10 md:order-2 bg-white text-stone-600 min-h-screen px-4 pt-4 pb-4 flex flex-col justify-center">
         
         <div id="progress" className='sticky top-0 pt-12 pb-6'>
           <p className='text-4xl flex flex-col justify-center items-center pb-2'>Selected work</p> 
