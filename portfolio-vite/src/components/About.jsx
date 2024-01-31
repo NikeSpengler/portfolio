@@ -7,12 +7,13 @@ const About = () => {
     return (
         <div id="About" className="flex flex-col justify-center items-center bg-stone-300 text-white min-h-screen md:px-28 px-14">
          <motion.div 
+                    className="flex flex-col"
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.5 }}
                     transition={{duration: 1}}
                     variants= {{
-                        hidden: { opacity: 0, x: -300 },
+                        hidden: { opacity: 0, x: -50 },
                         visible: { opacity: 1, x: 0}
                     }}
                 >
