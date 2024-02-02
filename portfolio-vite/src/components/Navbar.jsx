@@ -19,19 +19,19 @@ const [sidebar, toggleSidebar] = useCycle(false, true);
                         closed: {rotate: 0, y: 0},
                         open: {rotate: 45, y: 8},
                     }}
-                    className="w-7 h-0.5 bg-black block"></motion.span>
+                    className="w-7 h-0.5 bg-stone-400 block"></motion.span>
                     <motion.span 
                     variants={{
                         closed: {opacity: 1},
                         open: {opacity: 0},
                     }}
-                    className="w-7 h-0.5 bg-black block"></motion.span>
+                    className="w-7 h-0.5 bg-stone-400 block"></motion.span>
                     <motion.span 
                     variants={{
                         closed: {rotate: 0, y: 0},
                         open: {rotate: -45, y: -8},
                     }}
-                    className="w-7 h-0.5 bg-black block"></motion.span>
+                    className="w-7 h-0.5 bg-stone-400 block"></motion.span>
                 </motion.button>
             </div>
         </div>

@@ -5,7 +5,7 @@ import {motion} from "framer-motion"
 
 const About = () => {
     return (
-        <div id="About" className="flex flex-col justify-center items-center bg-stone-300 text-white min-h-screen md:px-28 px-14">
+        <div id="About" className="flex flex-col justify-center items-center bg-stone-200 text-white min-h-screen md:px-28 px-14">
          <motion.div 
                     className="flex flex-col"
                     initial="hidden"
