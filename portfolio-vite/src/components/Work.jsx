@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 // eslint-disable-next-line no-unused-vars
 import { motion, useScroll, useSpring, useTransform } from 'framer-motion'
 import { useRef } from 'react';
@@ -9,58 +10,74 @@ const items = [
     id:1,
     title: "React Native App",
     img:"https://static.wixstatic.com/media/1aa858_77b0d43b88fb4ae38382f560879096d4~mv2.jpg/v1/fill/w_605,h_465,al_c,q_80,usm_0.66_1.00_0.01/1aa858_77b0d43b88fb4ae38382f560879096d4~mv2.jpg",
-    desc:"React Native, Node.js, Tailwind"
+    desc:"React Native, Node.js, Tailwind",
+    url:"https://github.com/NikeSpengler",
   },
   {
     id:2,
     title: "React App",
     img:"https://static.wixstatic.com/media/1aa858_77b0d43b88fb4ae38382f560879096d4~mv2.jpg/v1/fill/w_605,h_465,al_c,q_80,usm_0.66_1.00_0.01/1aa858_77b0d43b88fb4ae38382f560879096d4~mv2.jpg",
-    desc:"React Native, Node.js, Tailwind"
+    desc:"React Native, Node.js, Tailwind",
+    url:"https://github.com/NikeSpengler",
   },
   {
     id:3,
     title: "Memory App",
     img:"https://static.wixstatic.com/media/1aa858_77b0d43b88fb4ae38382f560879096d4~mv2.jpg/v1/fill/w_605,h_465,al_c,q_80,usm_0.66_1.00_0.01/1aa858_77b0d43b88fb4ae38382f560879096d4~mv2.jpg",
-    desc:"React Native, Node.js, Tailwind"
+    desc:"React Native, Node.js, Tailwind",
+    url:"https://github.com/NikeSpengler",
   },
   {
     id:4,
     title: "Weather App",
     img:"https://static.wixstatic.com/media/1aa858_77b0d43b88fb4ae38382f560879096d4~mv2.jpg/v1/fill/w_605,h_465,al_c,q_80,usm_0.66_1.00_0.01/1aa858_77b0d43b88fb4ae38382f560879096d4~mv2.jpg",
-    desc:"React Native, Node.js, Tailwind"
+    desc:"React Native, Node.js, Tailwind",
+    url:"https://github.com/NikeSpengler",
   },
   {
     id:5,
     title: "Neck Health App",
     img:"https://static.wixstatic.com/media/1aa858_77b0d43b88fb4ae38382f560879096d4~mv2.jpg/v1/fill/w_605,h_465,al_c,q_80,usm_0.66_1.00_0.01/1aa858_77b0d43b88fb4ae38382f560879096d4~mv2.jpg",
-    desc:"React Native, Node.js, Tailwind"
+    desc:"React Native, Node.js, Tailwind",
+    url:"https://github.com/NikeSpengler",
   },
   {
     id:6,
     title: "Skills",
     img:"https://static.wixstatic.com/media/1aa858_77b0d43b88fb4ae38382f560879096d4~mv2.jpg/v1/fill/w_605,h_465,al_c,q_80,usm_0.66_1.00_0.01/1aa858_77b0d43b88fb4ae38382f560879096d4~mv2.jpg",
-    desc:"React Native, Node.js, Tailwind"
+    desc:"React Native, Node.js, Tailwind",
+    url:"https://github.com/NikeSpengler",
   },
 ];
 
 const Single = ({ item }) => {
   const ref = useRef();
 
-  const {scrollYProgress} = useScroll({
-    target: ref, 
-  });
+  // const {scrollYProgress} = useScroll({
+  //   target: ref, 
+  //   offset: ["start start", "end start"]
+  // });
 
-  const y = useTransform(scrollYProgress, [0,1], [-50, 300]);
+  // const y = useTransform(scrollYProgress, [0, 1], [-100, 100]);
 
   return (
-    <div ref={ref} className='bg-white flex px-6 flex-col justify-center items-center h-full md:flex md:flex-row'>
-      <div id="container" className='flex justify-center items-center gap-6'>
-        <img src={item.img} alt="" className='flex-1 w-6/12 object-cover'/>
-        <motion.div id="textContainer" style={{y}} className="flex-1 w-6/12">
-          <p className='text-3xl text-stone-600 pb-2 w-[300px]'>{item.title}</p>
-          <p className='text-xl text-stone-600 pb-4 w-[120px]'>{item.desc}</p>
-          <button className='text-xl text-stone-600 pb-60 hover:text-red-600'>GitHub →</button>
-        </motion.div>
+    <div ref={ref} className='bg-white md:px-8'>
+      <div id="container" className='flex justify-center items-center gap-6 w-full h-full'>
+        <div id="wrapper" className='h-full m-auto flex justify-center items-center gap-[50px] 
+        flex flex-col justify-center items-center md:max-w-[1366px] md:flex md:flex-row 
+        md:justify-center md:justify-items-center'>
+          <div id="imgContainer" className='md:flex-1 md:w-6/12 md:pb-[150px] pt-20'>
+            <img src={item.img} alt="" className='w-full h-full object-cover'/>
+          </div>
+          
+          <motion.div id="textContainer" className="flex-1 w-6/12 pb-10 md:pb-[150px] md:order-2" >
+            <p className='text-2xl md:text-3xl text-stone-600 pb-2 w-[300px]'>{item.title}</p>
+            <p className='text-lg md:text-xl text-stone-600 pb-4 w-[120px]'>{item.desc}</p>
+            <a href="https://github.com/NikeSpengler" className='text-lg md:text-xl text-stone-600 cursor-pointer hover:text-red-400'>GitHub →</a>
+          </motion.div>
+          
+        </div>
+       
       </div>
     </div>
   )
