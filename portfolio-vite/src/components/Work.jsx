@@ -70,7 +70,7 @@ const Single = ({ item }) => {
             <img src={item.img} alt="" className='w-full h-full object-cover'/>
           </div>
           
-          <motion.div id="textContainer" className="flex-1 w-6/12 pb-10 md:pb-[150px] md:order-2" >
+          <motion.div id="textContainer" className="md:flex-1 md:w-6/12 pl-8 pb-10 md:pb-[150px] md:order-2" >
             <p className='text-2xl md:text-3xl text-stone-600 pb-2 w-[300px]'>{item.title}</p>
             <p className='text-lg md:text-xl text-stone-600 pb-4 w-[120px]'>{item.desc}</p>
             <a href="https://github.com/NikeSpengler" className='text-lg md:text-xl text-stone-600 cursor-pointer hover:text-red-400'>GitHub →</a>
