@@ -5,7 +5,7 @@ import {motion} from "framer-motion"
 
 const Intro = () => {
     return (
-        <div id="Intro" className="gap-8 py-6 px-4 g-white text-black min-h-screen flex flex-col justify-center items-center
+        <div id="Intro" className="gap-8 py-6 px-4 min-h-screen flex flex-col justify-center items-center text-center
     md:flex md:flex-row md:justify-center md:justify-items-center md:h-full">
         <div className='space-y-5 top-0 flex flex-col p-6 sm:p-4'>
         <motion.div 
@@ -18,7 +18,7 @@ const Intro = () => {
                         visible: { opacity: 1, x: 0}
                     }}
                 >
-                <p className="text-3xl font-light font-italic text-stone-600 md:text-4xl">Nike Spengler</p>
+                <p className="text-4xl font-base font-italic text-stone-600 md:text-5xl">Nike Spengler</p>
                 
             </motion.div>
             <motion.div 
@@ -31,7 +31,7 @@ const Intro = () => {
                         visible: { opacity: 1, x: 0}
                     }}
                 >
-                <p className="text-3xl font-light text-stone-600 italic md:text-4xl">Frontend Developer</p>
+                <p className="text-3xl font-light text-stone-600 italic md:text-5xl">Frontend Developer</p>
                 
             </motion.div>
             <motion.div
@@ -44,7 +44,7 @@ const Intro = () => {
                   visible: { opacity: 1, x: 0}
               }}
             >
-                <a href="#Contact" className="text-3xl font-light text-stone-500 md:text-4xl">Contact me →</a>
+                <a href="#Contact" className="text-3xl font-light text-stone-500 md:text-5xl">Contact me →</a>
             </motion.div>
         </div>
        
