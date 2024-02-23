@@ -18,7 +18,7 @@ const About = () => {
                     }}
                 >
                 <p className="flex flex-col text-base text-stone-900 pt-16 md:text-lg md:max-w-lg lg:max-w-xl xl:max-w-2xl">
-                I am a Frontend Developer based in Stockholm, Sweden. I have mainly worked with JavaScript, CSS, HTML, React/ React Native, Next.js, Node.js. Apart from this, I am open to testing and learning new technologies. 
+                I am Nike Spengler, a Frontend Developer based in Stockholm, Sweden. I have mainly worked with JavaScript, CSS, HTML, React/ React Native, Next.js, Node.js. Apart from this, I am open to testing and learning new technologies. 
                 </p>
             </motion.div>
             <motion.div

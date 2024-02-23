@@ -27,12 +27,12 @@ const Contact = () => {
 
     return (
         <div>
-            <motion.div ref={ref} id="Contact" className="bg-lime-900 min-h-screen px-4 pt-[100px] md:pt-[200px] 
+            <motion.div ref={ref} id="Contact" className=" -z-10 bg-lime-900 min-h-screen px-4 pt-[100px] md:pt-[200px] 
             flex flex-col justify-center items-center h-full md:flex md:flex-row" variants={variants} initial="initial" whileInView="animate">
                 <motion.div className='space-y-5 top-0 flex flex-col p-8' variants={variants}>
                     <motion.h1 className="text-4xl font-light text-stone-400 md:text-5xl" variants={variants}>Contact me!</motion.h1>
-                    <motion.a href='https://github.com/NikeSpengler' className="text-4xl font-light text-stone-400 hover:text-amber-200 md:text-5xl" variants={variants}>GitHub →</motion.a>
-                    <motion.a href='https://www.linkedin.com/in/nikespengler/'className="text-4xl font-light text-stone-400 hover:text-amber-200 md:text-5xl"  variants={variants}>Linkedin →</motion.a>
+                    <motion.a href='https://github.com/NikeSpengler' target="_blank" rel="noopener noreferrer" className="text-4xl font-light text-stone-400 hover:text-amber-200 md:text-5xl" variants={variants}>GitHub →</motion.a>
+                    <motion.a href='https://www.linkedin.com/in/nikespengler/' target="_blank" rel="noopener noreferrer" className="text-4xl font-light text-stone-400 hover:text-amber-200 md:text-5xl"  variants={variants}>Linkedin →</motion.a>
                 </motion.div>
                 <motion.div className='w-[300px] h-[300px]' 
                     initial={{opacity:0}} 
