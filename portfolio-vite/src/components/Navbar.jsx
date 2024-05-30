@@ -7,7 +7,10 @@ const [sidebar, toggleSidebar] = useCycle(false, true);
 
   return (
     <nav className="sticky top-0 inset-x-0 h-16 bg-transparant">
-        <div className="container h-full px-4 flex items-center">
+        <div className="container h-full pt-4 pl-6 flex items-center justify-between">
+            {/* <div className="text-[100px] pt-12 text-white hidden">
+                .
+            </div> */}
             <div className="relative z-10">
                 <motion.button 
                     animate={sidebar ? "open" : "closed"}
@@ -34,7 +37,9 @@ const [sidebar, toggleSidebar] = useCycle(false, true);
                     className="w-7 h-0.5 bg-stone-400 block"></motion.span>
                 </motion.button>
             </div>
+            
         </div>
+     
         <AnimatePresence>
         {sidebar && (
             <MotionConfig transition={{
@@ -97,6 +102,7 @@ const [sidebar, toggleSidebar] = useCycle(false, true);
         </MotionConfig>
         )}
         </AnimatePresence>
+        
     </nav>
         
     
