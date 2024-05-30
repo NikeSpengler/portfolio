@@ -5,7 +5,26 @@ import {motion} from "framer-motion"
 
 const About = () => {
     return (
-        <div id="About" className="flex flex-col justify-center items-center bg-white text-white min-h-screen md:px-28 px-14">
+        <div>
+            <div>
+            <motion.div 
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, amount: 0.5 }}
+                    transition={{duration: 1}}
+                    variants= {{
+                        hidden: { opacity: 0, x: -50 },
+                        visible: { opacity: 1, x: 0}
+                    }}
+                >
+                <p className="text-[30px] md:text-[40px] font-light text-stone-600 px-[20px] md:pl-[18px] md:pr-[20px] leading-tight tracking-wide">About me</p>
+                
+            </motion.div>
+            </div>
+
+        
+        <div id="About" className="flex flex-col justify-center items-center bg-white text-white md:px-28 px-14">
+
             <motion.div 
                     className="flex flex-col"
                     initial="hidden"
@@ -66,6 +85,7 @@ const About = () => {
                 I love the continuous learning and growth that comes with this field and am always eager to learn new things, improve my skills and become a better developer.
                 </p>
             </motion.div>
+    </div>
     </div>
     )
 }

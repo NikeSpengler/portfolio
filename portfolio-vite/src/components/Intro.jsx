@@ -5,8 +5,8 @@ import {motion} from "framer-motion"
 
 const Intro = () => {
     return (
-        <div id="Intro" className="gap-8 py-6 px:4 min-h-screen md:h-full">
-        <div className='space-y-5 top-0 flex flex-col px-6 sm:p-4 text-left md:mx-0 md:text-left'>
+        <div id="Intro" className="gap-8 py-6 min-h-screen md:h-full">
+        <div className='space-y-5 top-0 flex flex-col text-left md:mx-0 md:text-left'>
         <motion.div 
                     initial="hidden"
                     whileInView="visible"
@@ -17,7 +17,7 @@ const Intro = () => {
                         visible: { opacity: 1, x: 0}
                     }}
                 >
-                <p className="text-[60px] md:text-[140px] font-light text-stone-600 md:text-5xl leading-tight tracking-wide">Nike Spengler</p>
+                <p className="text-[60px] md:text-[140px] font-light text-stone-600 md:text-5xl px-[20px] md:pl-[16px] md:pr-[20px] leading-tight tracking-wide">Nike Spengler</p>
                 
             </motion.div>
           
@@ -33,7 +33,7 @@ const Intro = () => {
             >
                 <a href="#Contact" className="text-4xl font-light text-left text-stone-400 pb-6 gap-6 md:pb-8 md:text-5xl">Contact me →</a>
             </motion.div> */}
-            <div className='flex md:flex justify-end mx-auto md:mx-0 pr-6'>
+            <div className='flex md:flex justify-end sm:justify-end mx-auto md:mx-0 pr-4'>
                 <motion.div
                 initial="hidden"
                 whileInView="visible"
