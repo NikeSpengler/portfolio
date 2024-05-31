@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap');
+
+
 .intro {
     position: relative;
 }
@@ -9,6 +13,7 @@
 }
 
 .intro-text {
+    font-family: "Maven Pro", sans-serif;
     height: 100%;
     display: flex;
     flex-direction: column;

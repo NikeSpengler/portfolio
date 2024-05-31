@@ -33,7 +33,7 @@ const Intro = () => {
             >
                 <a href="#Contact" className="text-4xl font-light text-left text-stone-400 pb-6 gap-6 md:pb-8 md:text-5xl">Contact me →</a>
             </motion.div> */}
-            <div className='flex md:flex justify-end sm:justify-end mx-auto md:mx-0 pr-4'>
+            <div className='flex md:flex justify-end md:justify-end mx-auto md:mx-0 pr-4'>
                 <motion.div
                 initial="hidden"
                 whileInView="visible"
@@ -44,7 +44,7 @@ const Intro = () => {
                     visible: { opacity: 1, x: 0}
                 }}
                 >
-                    <p className="text-[14px] font-light text-left text-stone-600 pb-20 gap-6 md:pb-8 pt-10 md:pt-20 md:text-left max-w-[250px] md:max-w-[350px]">I am a software developer with focus on and keen interest in frontend development. With a passion for development, design, and creating modern, functional websites. </p>
+                    <p className="text-[14px] text-left justify-end md:justify-end text-stone-600 pb-20 gap-6 md:pb-8 pt-10 md:pt-20 md:text-left max-w-[280px] md:max-w-[350px]">I am a software developer with focus on and keen interest in frontend development. With a passion for development, design, and creating modern, functional websites. </p>
                 </motion.div>
             </div>
            

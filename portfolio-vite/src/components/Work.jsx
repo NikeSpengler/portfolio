@@ -66,7 +66,7 @@ const Single = ({ item }) => {
     <div ref={ref} className='bg-white md:px-10'>
       <div id="container" className='flex justify-center items-center gap-4 w-full h-full'>
         <div id="wrapper" className='h-full m-auto flex justify-center items-center gap-[50px] 
-        flex flex-col justify-center items-center md:max-w-[1366px] md:flex md:flex-row 
+         flex-col md:max-w-[1366px] md:flex md:flex-row 
         md:justify-center md:justify-items-center'>
           <div id="imgContainer" className='md:flex-1 md:w-6/12 md:pb-[150px] pt-20'>
             <img src={getImageURL (item.img)} alt="" className='w-full h-full object-cover'/>

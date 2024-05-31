@@ -17,7 +17,7 @@ const About = () => {
                         visible: { opacity: 1, x: 0}
                     }}
                 >
-                <p className="text-[30px] md:text-[40px] font-light text-stone-600 px-[20px] md:pl-[18px] md:pr-[20px] leading-tight tracking-wide">About me</p>
+                <p className="text-[30px] md:text-[40px] font-light text-stone-600 px-[20px] md:pl-[18px] md:pr-[20px] leading-tight tracking-wide">My background & interests</p>
                 
             </motion.div>
             </div>
