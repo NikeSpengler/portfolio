@@ -13,14 +13,21 @@ const items = [
     title:"Examwork KYH",
     img:"ExamKYH.png",
     desc:"Built in: React, Next.js, Tailwind, Contentful, GraphQL",
-    url:"https://github.com/NikeSpengler",
+    url:"https://github.com/NikeSpengler/kyh-exam-rncg",
+  },
+  {
+    id:2,
+    title:"Andrea Tsang Website",
+    img:"AndreaTsang.png",
+    desc:"Built in: Webdesigner, Shopify, Liquid",
+    url:"https://github.com/NikeSpengler/AndreaTsangWebsite",
   },
   {
     id:2,
     title:"React Weather App",
-    img:"Weather.png",
-    desc:"Built in: React, CSS/SASS, Node.js",
-    url:"https://github.com/NikeSpengler",
+    img:"WeatherApp.png",
+    desc:"Built in: React, Vite, Emotion/Styled ",
+    url:"https://github.com/NikeSpengler/WeatherApp-React",
   },
   {
     id:3,
@@ -31,10 +38,10 @@ const items = [
   },
   {
     id:4,
-    title: "Walkie.",
-    img:"Walkie.png",
-    desc:"Built in: JavaScript, CSS, HTML",
-    url:"https://github.com/NikeSpengler",
+    title: "To do App",
+    img:"ToDo.png",
+    desc:"Built in: React, Vite, Local Storage and Tailwind",
+    url:"https://github.com/NikeSpengler/ToDoApp-React",
   },
   {
     id:5,
@@ -75,9 +82,11 @@ const Single = ({ item }) => {
           <div id="textContainer" className="md:flex-1 md:w-6/12 pl-8 pb-10 md:pb-[150px]" >
             <p className='text-2xl md:text-3xl text-stone-600 pb-2 w-[300px]'>{item.title}</p>
             <p className='text-lg md:text-xl text-stone-600 pb-4 w-[300px]'>{item.desc}</p>
-            <a src={getImageURL (item.url)} target="_blank" rel="noopener noreferrer" title="Go to project" className='text-lg md:text-xl text-stone-600 hover:text-red-400'>
-              <button>Read more →</button>
+            <a href={item.url} target="_blank" rel="noopener noreferrer" title="Go to project" className='text-lg md:text-xl text-stone-600 hover:text-red-400'>
+              Read more →
             </a>
+            
+           
           </div>
         </div>
       </div>
@@ -98,10 +107,10 @@ const Work = () => {
   })
 
   return (
-    <div id="Work" ref={ref} className="relative -z-10 md:order-2 bg-white text-stone-600 min-h-screen px-4 pt-4 pb-4 flex flex-col justify-center">
+    <div id="Work" ref={ref} className="relative md:order-2 bg-white text-stone-600 min-h-screen px-4 pt-4 pb-4 flex flex-col justify-center">
         <div id="progress" className='sticky top-0 pt-12 pb-6'>
           <p className='text-4xl flex flex-col justify-center items-center pb-2'>Selected work</p> 
-          <p className='text-2l flex flex-col justify-center items-center pb-4'>For more info view my <a className='hover:text-red-400' href="https://github.com/NikeSpengler">GitHub</a></p>
+          <p className='text-2l flex flex-col justify-center items-center pb-4'>For more info view my <a className='hover:text-red-800' href="https://github.com/NikeSpengler">GitHub</a></p>
           <motion.div style={{scaleX: scaleX}} id="progressbar" className='inset-x-0 h-16 h-[3px] bg-stone-400'></motion.div>
         </div>
         <div>
