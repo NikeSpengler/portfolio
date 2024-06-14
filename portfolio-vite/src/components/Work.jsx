@@ -18,7 +18,7 @@ const items = [
   {
     id:2,
     title:"Andrea Tsang Website",
-    img:"AndreaTsang.png",
+    img:"AndreaTsangWebsite.png",
     desc:"Built in: Webdesigner, Shopify, Liquid",
     url:"https://github.com/NikeSpengler/AndreaTsangWebsite",
   },
