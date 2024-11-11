@@ -6,7 +6,7 @@ import {motion} from "framer-motion"
 const About = () => {
     return (
         <div>
-            <div>
+        <div id="About" className="flex flex-col justify-center items-center bg-white text-white md:px-20 px-14">
             <motion.div 
                     initial="hidden"
                     whileInView="visible"
@@ -17,14 +17,9 @@ const About = () => {
                         visible: { opacity: 1, x: 0}
                     }}
                 >
-                <p className="text-[30px] md:text-[40px] font-light text-stone-600 px-[20px] md:pl-[18px] md:pr-[20px] leading-tight tracking-wide">My background & interests</p>
+                <h2 className="text-[24px] md:text-[40px] font-light text-stone-600 leading-tight tracking-wide md:max-w-lg lg:max-w-xl xl:max-w-2xl">My background & interests</h2>
                 
             </motion.div>
-            </div>
-
-        
-        <div id="About" className="flex flex-col justify-center items-center bg-white text-white md:px-28 px-14">
-
             <motion.div 
                     className="flex flex-col"
                     initial="hidden"
@@ -81,7 +76,7 @@ const About = () => {
                   visible: { opacity: 1, x: 0}
               }}
             >
-                <p className="flex flex-col text-base text-stone-900 pt-10 pb-16 md:text-base md:max-w-lg lg:max-w-xl xl:max-w-2xl">
+                <p className="flex flex-col text-base text-stone-900 pt-10 pb-20 md:pb-[150px] md:text-base md:max-w-lg lg:max-w-xl xl:max-w-2xl">
                 I love the continuous learning and growth that comes with this field and am always eager to learn new things, improve my skills and become a better developer.
                 </p>
             </motion.div>
