@@ -17,11 +17,11 @@ const Intro = () => {
                         visible: { opacity: 1, x: 0}
                     }}
                 >
-                <h1 className="text-[30px] md:text-[50px] font-light text-stone-600 md:text-5xl md:pt-10 px-[20px] leading-tight tracking-wide">Graphic Designer | Frontend Developer</h1>
+                <h1 className="text-[30px] md:text-[50px] font-light text-stone-600 md:text-5xl md:pt-20 pt-20 px-[20px] leading-tight tracking-wide">Graphic Designer | Frontend Developer</h1>
                 
             </motion.div>
           
-            {/* <motion.div
+            <motion.div
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.5 }}
@@ -31,9 +31,9 @@ const Intro = () => {
                   visible: { opacity: 1, x: 0}
               }}
             >
-                <a href="#Contact" className="text-4xl font-light text-left text-stone-400 pb-6 gap-6 md:pb-8 md:text-5xl">Contact me →</a>
-            </motion.div> */}
-            <div className='flex md:flex justify-center md:justify-center mx-auto md:mx-0 px-4'>
+                <a href="#Contact" className="text-[30px] md:text-[50px] font-light text-left text-stone-600 pb-10 md:pb-10 tracking-wide md:text-5xl">Contact me →</a>
+            </motion.div>
+            {/* <div className='flex md:flex justify-center md:justify-center mx-auto md:mx-0 px-4'>
                 <motion.div
                 initial="hidden"
                 whileInView="visible"
@@ -47,11 +47,11 @@ const Intro = () => {
                     <p className="text-[16px] text-center justify-center md:text-center md:justify-center text-stone-600 pb-8 pt-0 md:pb-10 md:pt-2 max-w-[280px] md:max-w-[500px]">I am Nike Spengler a Graphic Designer and Frontend Developer with focus on and keen interest in UX. With a passion for development, usability, and creating modern, functional websites. </p>
                 </motion.div>
             </div>
-           
+            */}
         </div>
        
         {/* Image section*/}
-        <div className="flex justify-center items-center -z-10 md:order-2 pt:10">
+        <div className="flex justify-center items-center -z-10 md:order-2 pt-10">
             <motion.div 
                 className='circle' 
                 initial={{opacity: 0.5, scale: 0.5}}

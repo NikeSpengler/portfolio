@@ -6,8 +6,8 @@ import {motion} from "framer-motion"
 const About = () => {
     return (
         <div>
-        <div id="About" className="flex flex-col justify-center items-center bg-white text-white md:px-20 px-14">
-            <motion.div 
+        <div id="About" className="flex flex-col justify-center items-center bg-stone-100 text-white md:px-20 px-14">
+            {/* <motion.div 
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.5 }}
@@ -19,7 +19,7 @@ const About = () => {
                 >
                 <h2 className="text-[24px] md:text-[40px] font-light text-stone-600 leading-tight tracking-wide md:max-w-lg lg:max-w-xl xl:max-w-2xl">My background & interests</h2>
                 
-            </motion.div>
+            </motion.div> */}
             <motion.div 
                     className="flex flex-col"
                     initial="hidden"
