@@ -31,7 +31,7 @@ const Intro = () => {
                   visible: { opacity: 1, x: 0}
               }}
             >
-                <a href="#Contact" className="text-[30px] md:text-[50px] font-light text-left text-stone-600 pb-10 md:pb-10 tracking-wide md:text-5xl">Contact me →</a>
+                <a href="#Contact" className="text-[30px] md:text-[50px] font-light text-center text-stone-600 pb-10 md:pb-10 tracking-wide md:text-5xl">Contact me →</a>
             </motion.div>
             {/* <div className='flex md:flex justify-center md:justify-center mx-auto md:mx-0 px-4'>
                 <motion.div

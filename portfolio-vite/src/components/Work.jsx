@@ -109,8 +109,8 @@ const Work = () => {
   return (
     <div id="Work" ref={ref} className="relative md:order-2 bg-white text-stone-600 min-h-screen px-4 pt-4 pb-4 flex flex-col justify-center">
         <div id="progress" className='sticky top-0 pt-20 pb-6'>
-          <p className='text-4xl flex flex-col justify-center items-center pb-2'>Selected work</p> 
-          <p className='text-2l flex flex-col justify-center items-center pb-4'>For more info view my <a className='hover:text-red-800' href="https://github.com/NikeSpengler">GitHub</a></p>
+          <h1 className='text-4xl flex flex-col justify-center items-center pb-2'>Selected work</h1> 
+          <p className='text-base md:text-lg flex flex-col justify-center items-center pb-4'>For more info view my <a className='hover:text-red-800' href="https://github.com/NikeSpengler">GitHub</a></p>
           <motion.div style={{scaleX: scaleX}} id="progressbar" className='inset-x-0 h-16 h-[3px] bg-stone-400'></motion.div>
         </div>
         <div>
